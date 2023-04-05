@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/FRONT/js/partes.js"></script>
+    <!--Fontawesome CDN-->
+    <script src="https://kit.fontawesome.com/84d85efac0.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <header>
+
+        <div style="display:flex" class="loginHead">
+            <!-- <div class="loginBox">
+                <a href="./login.html"><span><i class="fas fa-2x fa-user"></i></span></a>
+            </div> -->
+
+            <div class="registroBox">
+
+                <a class="iconoLogout" onclick="logout()"><span>
+                        <i class="fa-solid fa-2x fa-arrow-right-to-bracket"></i></span></a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="entradaAgua">
+            <p><b>AGUA COMUNIDAD</b></p>
+        </div>
+        <div class="aguaComunidad">
+
+        </div>
+        <div class="top">
+            <div class="containerD1">
+                <div class="valvula V1" valvulaID="1" type="button">
+                    <p> V1</p>
+                </div>
+                <div class="deposito D1" depositoID="1" type="button">
+                    <p>D1</p>
+                    <p class="deposito_capacidad"></p>
+                </div>
+                <div class="valvula V4" valvulaID="4" type="button">
+                    <p> V4</p>
+                </div>
+                <div class="valvula V5" valvulaID="5" type="button">
+                    <p> V5</p>
+                </div>
+            </div>
+            <div class="containerD2">
+                <div class="valvula V2" valvulaID="2" type="button">
+                    <p> V2</p>
+                </div>
+                <div class="deposito D2" depositoID="2" type="button">
+                    <p>D2</p>
+                    <p class="deposito_capacidad"></p>
+                </div>
+                <div class="valvula V6" valvulaID="6" type="button">
+                    <p> V6</p>
+                </div>
+            </div>
+            <div class="containerD3">
+                <div class="valvula V3" valvulaID="3" type="button">
+                    <p> V3</p>
+                </div>
+                <div class="deposito D3" depositoID="3" type="button">
+                    <p>D3</p>
+                    <p class="deposito_capacidad"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bot">
+            <div class="conexionV8">
+                <div class="valvula V8" valvulaID="8" type="button">
+                    <p> V8</p>
+                </div>
+            </div>
+
+            <div class="motores">
+
+                <div class="valvula V7" valvulaID="7" type="button">
+                    <p> V7</p>
+                </div>
+                <div class="valvula V9" valvulaID="9" type="button">
+                    <p> V9</p>
+                </div>
+                <div class="motor M1" type="button">
+                    <p>MOTOR 1</p>
+                </div>
+                <div class="motor M2" type="button">
+                    <p>MOTOR 2</p>
+                </div>
+            </div>
+
+            <div class="finalCircuito">
+                <div class="valvula V10" valvulaID="10" type="button">
+                    <p> V10</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="finalIcons">
+            <div class="homeIcon"> <span><i class="fa-solid fa-house"></i></span></div>
+            <div class="groundIcon"> <span><i class="fa-solid fa-seedling"></i></span></div>
+        </div>
+
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal modal-backdrop" id="modalDiv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true" hidden>
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal"></h5>
+                    <button type="button" class="btn-close cerrarModal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="cuerpoModal">...</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerText">
+            <p>Copyright &copy; 2022 - <a href="">Aviso Legal</a> - <a href="">Cookies</a></p>
+        </div>
+    </footer>
+
+    <script>
+        /*------------------------------------------------------------------*/
+        /* INIT
+        /*------------------------------------------------------------------*/
+        $(document).ready(function () {
+
+            login_verif();
+            cargar_valvulas();
+            cargar_depositos();
+
+            $('.valvula').click(function () {
+
+                var valvulaID = $(this).attr('valvulaID');
+                /*---*/
+                if ($(this).hasClass('open')) {
+                    var estado = 0;
+                } else {
+                    var estado = 1;
+                }
+                /*---*/
+                update_valvulas(valvulaID, estado);
+            });
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,544 @@
+@import url(reset.css);
+
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.motor>p {
+    padding: 10%;
+
+}
+
+
+.valvula p {
+    margin-top: 0.5%;
+}
+
+header {
+    height: 6vh;
+    background-color: rgb(0, 94, 94);
+    width: 100%;
+}
+
+footer {
+    height: 5.5vh;
+    background-color: rgb(0, 94, 94);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.footerText {
+    padding: 1%;
+    font-size: 15px;
+}
+
+a {
+    color: white !important;
+}
+
+.voluta {
+    color: rgb(0, 94, 94) !important;
+}
+
+.aguaComunidad {
+    border-right: 1px solid black;
+    height: 10px;
+    position: relative;
+    left: -85%;
+
+}
+
+.entradaAgua {
+    /* border: 1px solid black; */
+    font-weight: bold;
+    position: relative;
+    width: 33.33%;
+    padding-left: 5%;
+}
+
+.container {
+    height: 65vh;
+    width: 50%;
+    /* border: solid black 1px; */
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 35%;
+}
+
+.containerD1 {
+    width: 33.3%;
+    border: 1px solid black;
+
+}
+
+.containerD2 {
+    width: 41.5%;
+    border-top: 1px solid black;
+}
+
+.containerD3 {
+    width: 25.1%;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.bot {
+    margin: 0 auto;
+    height: 64.5%;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.conexionV8 {
+    height: 10%;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.motores {
+    height: 50%;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.finalCircuito {
+    height: 40%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.finalIcons {
+    display: flex;
+}
+
+.homeIcon {
+    width: 5%;
+    height: 5%;
+    position: relative;
+    right: -23.8%;
+    padding-top: 1%;
+}
+
+
+.groundIcon {
+    width: 5%;
+    height: 5%;
+    position: relative;
+    right: -69%;
+    padding-top: 1%;
+}
+
+/* VALVULAS */
+
+.valvula {
+    border-radius: 100%;
+    background-color: white;
+    width: 15%;
+    height: 25%;
+    border: 1px black solid;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.valvula p {
+    position: fixed;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    font-weight: bold;
+}
+
+.V1 {
+    width: 18%;
+    position: relative;
+    left: -9%;
+    bottom: -10%;
+}
+
+.V2 {
+    position: relative;
+    left: -8%;
+    bottom: -10%;
+}
+
+.V3 {
+    width: 25%;
+    position: relative;
+    left: 87%;
+    bottom: -10%;
+}
+
+.V4 {
+    width: 18%;
+    position: relative;
+    left: 17%;
+    bottom: -25%;
+}
+
+.V5 {
+    width: 17.5%;
+    position: relative;
+    left: 78.5%;
+    bottom: 1.4%
+}
+
+.V6 {
+    width: 15%;
+    position: relative;
+    left: 120%;
+    bottom: -25%
+}
+
+.V7 {
+    position: relative;
+    left: -7%;
+    bottom: -15%;
+    width: 12%;
+}
+
+.V8 {
+    width: 13%;
+    height: 140%;
+    position: relative;
+    left: 43%;
+    bottom: -25%
+}
+
+.V9 {
+    position: relative;
+    left: 94%;
+    bottom: 12%;
+    width: 12%;
+}
+
+
+
+
+.V10 {
+    width: 13%;
+    height: 35%;
+    position: relative;
+    left: 43%;
+    bottom: 20%;
+    padding-left: -5px
+}
+
+/* DEPOSITOS */
+
+
+.deposito {
+    background-color: white;
+    width: 40%;
+    height: 35%;
+    border: 1px black solid;
+    cursor: pointer;
+    position: relative;
+    top: 18%;
+}
+
+
+/* MOTORES */
+.motor {
+
+    background-color: white;
+    width: 40%;
+    height: 25%;
+    border: 1px black solid;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.M1 {
+    position: relative;
+    left: -13%;
+    bottom: -1%;
+    width: 25%;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.M2 {
+    position: relative;
+    left: 88%;
+    bottom: 36%;
+    width: 25%;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+
+.deposito p {
+    position: fixed;
+    padding-top: 0.6%;
+    padding-left: 1.9%;
+    font-weight: bold;
+
+}
+
+.deposito p.deposito_capacidad {
+    padding-top: 1.9%;
+    padding-left: 1.7%;
+    font-size: .8em;
+}
+
+.D1 {
+    width: 30%;
+    position: relative;
+    left: -15%;
+    bottom: -25%;
+}
+
+.D2 {
+    width: 25%;
+    position: relative;
+    left: -13%;
+    bottom: -25%;
+}
+
+.D3 {
+    position: relative;
+    left: 80%;
+    bottom: -25%;
+}
+
+/* .open{
+    background-color: rgb(0, 255, 0);
+    
+
+} */
+
+.loginHead {
+    padding-top: 0.5%;
+    position: absolute;
+    right: 1%;
+}
+
+.loginBox {
+    padding-top: 0.5%;
+    justify-content: center;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+.registroBox {
+    padding: 0.5%;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5) !important;
+    padding-right: 10px;
+}
+
+
+.fa-2x {
+    color: white !important;
+    font-size: 25px;
+}
+
+.fa-2x:hover {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.open {
+    background-color: lightgreen !important;
+}
+
+.valvula {
+    background-color: lightcoral;
+}
+
+/* LOGIN */
+
+.containerLogin {
+    margin: 0 auto;
+    padding: 10%;
+    background-color: rgb(0, 94, 94);
+    height: 100vh;
+
+}
+
+.card_login {
+    width: 40%;
+    height: 70%;
+}
+
+/* input {
+    width: 100%;
+    height: 100%;
+} */
+
+
+
+.login_btn {
+    background-color: rgb(0, 94, 94);
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width: 31.25em) {
+    p {
+        font-size: 10px;
+        margin-top: 4%
+    }
+
+    .loginHead {
+        padding-top: 2%;
+    }
+
+    .container {
+        width: 85%;
+        padding-top: 5%;
+    }
+
+    .motor {
+        padding-left: 0.1%;
+        padding-right: 0.3%;
+    }
+
+    .containerD1 {
+        width: 50.5%;
+
+    }
+
+    .containerD3 {
+        width: 31%;
+    }
+
+    .V5 {
+        left: 74%;
+    }
+
+
+    .containerLogin {
+        max-height: fit-content;
+    }
+
+    .card_login {
+        width: 100%;
+        margin-top: 50%;
+        right: -3.75%;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    .D1 {
+        width: 50%;
+    }
+
+    .D2 {
+        width: 60%;
+    }
+
+    .deposito_capacidad {
+        margin-top: 7%;
+    }
+
+    .D3 {
+        width: 80%;
+        left: 40%;
+    }
+
+
+    .V1 {
+        width: 26%;
+        height: 23%;
+        left: -14%;
+    }
+
+    .V2 {
+        width: 31%;
+        height: 23%;
+        left: -17%;
+    }
+
+    .V3 {
+        width: 41%;
+        height: 23%;
+        left: 79%;
+    }
+
+
+
+    .V4 {
+        width: 25%;
+        height: 23%;
+        bottom: -26%
+    }
+
+    .V5 {
+        width: 25%;
+        height: 23%;
+        left: 68%;
+        bottom: -2%
+    }
+
+    .V6 {
+        width: 30%;
+        height: 23%;
+        bottom: -27%
+    }
+
+    .V7 {
+        width: 22%;
+        left: -12%;
+    }
+
+    .V8 {
+        width: 21%;
+        height: 125%;
+        bottom: -27%;
+    }
+
+    .V9 {
+        width: 22%;
+        left: 89%;
+    }
+
+    .V10 {
+        width: 21%;
+        height: 30%;
+        top: -15%;
+    }
+
+    .motor {
+        width: 30%;
+    }
+
+    .valvula p {
+        margin-top: 3.5%;
+        margin-left: 2.2%;
+    }
+
+    .M1 {
+        left: -15%;
+    }
+
+    .M2 {
+        left: 85%;
+    }
+
+}
